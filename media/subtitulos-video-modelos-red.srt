@@ -1,0 +1,155 @@
+1
+00:00:00,000 --> 00:00:06,195
+Muy buenas. Junto con mi compañera Diana Fernanda y mi persona Jhonatan Stiven Guzmán,
+
+2
+00:00:06,195 --> 00:00:12,389
+el día de hoy queremos hablar sobre la evaluación de Recursos Educativos Digitales. Pero antes,
+
+3
+00:00:12,389 --> 00:00:18,584
+quiero plantearles una pregunta: cuando elegimos un recurso digital para una clase, no basta con
+
+4
+00:00:18,584 --> 00:00:24,779
+que tenga colores y animación; la pregunta clave es: ¿realmente ayuda a nuestros estudiantes a aprender?
+
+5
+00:00:24,779 --> 00:00:30,973
+Con esa pregunta desarrollamos este caso de estudio para los estudiantes de grado séptimo en el Imperial Eagles Bilingual School,
+
+6
+00:00:30,973 --> 00:00:37,168
+colegio en donde ejercemos la labor docente mi compañera y yo. Los recursos seleccionados
+
+7
+00:00:37,168 --> 00:00:43,363
+para el área de matemáticas fueron: Factorización por áreas en GeoGebra y Coin Probability en PhET.
+
+8
+00:00:43,363 --> 00:00:49,558
+El primero, ¿por qué lo elegimos? Permite que los estudiantes visualicen la factorización
+
+9
+00:00:49,558 --> 00:00:55,752
+de forma concreta, relacionando expresiones algebraicas con áreas y figuras. El segundo permite experimentar
+
+10
+00:00:55,752 --> 00:01:01,947
+con simulaciones interactivas y comprender mejor el espacio muestral, los eventos y la probabilidad. Para evaluar estos recursos,
+
+11
+00:01:01,947 --> 00:01:08,142
+analizamos tres modelos evaluativos. El primero fue LORI: este modelo revisa aspectos como
+
+12
+00:01:08,142 --> 00:01:14,336
+la calidad del contenido, objetivos, motivación, interacción, usabilidad y accesibilidad.
+
+13
+00:01:14,336 --> 00:01:20,531
+Su ventaja es que ofrece una mirada muy completa del recurso; nos permitió reconocer que son
+
+14
+00:01:20,531 --> 00:01:26,726
+atractivos, interactivos y fáciles de explorar. Sin embargo, también presenta una limitación:
+
+15
+00:01:26,726 --> 00:01:32,920
+la valoración puede variar según la interpretación de quien evalúa; por ello es clave usar criterios claros
+
+16
+00:01:32,920 --> 00:01:39,115
+y, si es posible, contrastar la opinión de más de una persona. El segundo modelo analizado fue COdA:
+
+17
+00:01:39,115 --> 00:01:45,310
+este analiza la calidad desde criterios didácticos y tecnológicos, como la coherencia de objetivos,
+
+18
+00:01:45,310 --> 00:01:51,504
+la interactividad, el diseño instruccional, la usabilidad y la accesibilidad. Su principal ventaja
+
+19
+00:01:51,504 --> 00:01:57,699
+es que no solo califica si un recurso es bueno o malo: ayuda a decidir qué se debe mejorar antes del aula.
+
+20
+00:01:57,699 --> 00:02:03,894
+Su limitación es que necesita adaptarse al contexto: un recurso puede funcionar muy bien en un grupo,
+
+21
+00:02:03,894 --> 00:02:10,088
+pero requerir ajustes específicos para nuestros estudiantes. El tercer modelo seleccionado fue HEODAR:
+
+22
+00:02:10,088 --> 00:02:16,283
+este profundiza en la interfaz pedagógica, la motivación, la facilidad de uso y la reutilización del recurso.
+
+23
+00:02:16,283 --> 00:02:22,478
+Su gran fortaleza es que permite observar en detalle las experiencias del estudiante frente a la pantalla.
+
+24
+00:02:22,478 --> 00:02:28,673
+Su aspecto menos favorable es que es más extenso y exige más tiempo para una evaluación minuciosa.
+
+25
+00:02:28,673 --> 00:02:34,867
+Una vez realizada la aplicación de estos tres instrumentos, los resultados nos permitieron
+
+26
+00:02:34,867 --> 00:02:41,062
+concluir que los recursos son pertinentes pero no actúan por sí solos: GeoGebra favorece la comprensión
+
+27
+00:02:41,062 --> 00:02:47,257
+de las factorizaciones, mientras que PhET despierta la curiosidad y la experimentación en probabilidad.
+
+28
+00:02:47,257 --> 00:02:53,451
+En ambos casos la usabilidad fue una fortaleza: la interfaz es clara y los recursos se aprenden
+
+29
+00:02:53,451 --> 00:02:59,646
+con gran rapidez, pero aun así requieren indispensablemente la mediación docente
+
+30
+00:02:59,646 --> 00:03:05,841
+y actividades guiadas que inviten a explicar, justificar y aplicar lo que están aprendiendo.
+
+31
+00:03:05,841 --> 00:03:12,035
+Por este motivo, el modelo que consideramos más pertinente y adaptable a nuestro contexto educativo,
+
+32
+00:03:12,035 --> 00:03:18,230
+basado en el análisis de nuestro caso de estudio, es el modelo COdA,
+
+33
+00:03:18,230 --> 00:03:24,425
+porque es práctico, equilibrado y permite tomar decisiones concretas: usar el recurso, adaptarlo o descartarlo.
+
+34
+00:03:24,425 --> 00:03:30,619
+Para nuestro grupo de estudiantes facilita valorar no solo si el recurso es visualmente atractivo, sino si
+
+35
+00:03:30,619 --> 00:03:36,814
+responde al objetivo pedagógico, si es intuitivo y si garantiza accesibilidad real e inclusión para
+
+36
+00:03:36,814 --> 00:03:43,009
+todos. En conclusión: la calidad de un RED no radica únicamente en la tecnología; radica en la manera
+
+37
+00:03:43,009 --> 00:03:49,204
+en que el docente lo adapta y lo transforma en una experiencia de aprendizaje significativa.
+
+38
+00:03:49,204 --> 00:03:55,398
+Ese es el objetivo fundamental de nuestra propuesta pedagógica. Muchísimas gracias por
+
+39
+00:03:55,398 --> 00:04:02,920
+su amable atención. Esperamos que esta presentación sea de gran utilidad e inspiración para su labor educativa.

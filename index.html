@@ -1,0 +1,88 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Portafolio académico de modelos de evaluación de recursos educativos digitales."><title>Inicio | Portafolio RED</title><link rel="stylesheet" href="styles.css"></head><body><div class="topline"></div>
+</div><header class="shell"><nav class="nav"><a class="brand" href="index.html">PORTAFOLIO <span>RED</span> <span class="badge-udes">UDES</span></a><div class="links"><a href="index.html">Inicio</a><a href="modelos.html">Modelos y RED</a><a href="rediseno.html">Rediseño</a><a href="aplicacion.html">Aplicación</a><a href="referencias.html">Referencias</a></div></nav></header><main><section class="hero"><div class="shell"><p class="eyebrow">Universidad de Santander · Centro de Educación Virtual CVUDES</p><h1>Modelos de evaluación de <em>recursos educativos digitales</em></h1><p class="lede">Portafolio académico para seleccionar, analizar, rediseñar y evaluar recursos educativos digitales aplicables a la enseñanza de ciencias y matemáticas.</p><p><span class="pill">Entrega prevista: 26 de octubre de 2026</span></p></div></section><section class="section"><div class="shell two"><div><p class="tag">Presentación</p><h2>Una ruta para decidir antes de usar.</h2><p class="section-intro">El portafolio articula la selección de dos RED abiertos con modelos de evaluación de calidad. La finalidad no es calificar un recurso por intuición, sino argumentar su pertinencia pedagógica, técnica y de accesibilidad.</p><div class="callout"><strong>Propósito.</strong> Identificar fortalezas, límites y oportunidades de rediseño para una experiencia de aula contextualizada.</div></div><aside class="card"><p class="tag">Datos Institucionales</p><dl class="meta"><dt>Autores</dt><dd><strong>Diana Fernanda Rivera Ardila</strong><br><strong>Jhonatan Stiven Guzmán Olaya</strong></dd><dt>Docente Tutor</dt><dd>Mg. Hugo Ferdinand Burgos Bareño</dd><dt>Universidad</dt><dd>Universidad de Santander – UDES</dd><dt>Centro Virtual</dt><dd>Centro de Educación Virtual CVUDES</dd><dt>Programa</dt><dd>Especialización en Aplicación de TIC para la Enseñanza</dd><dt>Módulo</dt><dd>Evaluación de Recursos Educativos Digitales</dd><dt>Población Objeto</dt><dd>Imperial Eagles Bilingual School · Grado 7.°</dd></dl></aside></div></section>
+<section class="section video-theater-section" id="video-sustentacion">
+  <div class="shell">
+    <div class="video-theater-header">
+      <div class="theater-pill">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        Sustentación Audiovisual Oficial · UDES 2026
+      </div>
+      <h2>Sustentación del Caso de Estudio y Modelos de Evaluación</h2>
+      <p class="section-intro" style="margin: 0 auto;">
+        Presentación docente de <strong>Diana Fernanda Rivera Ardila</strong> y <strong>Jhonatan Stiven Guzmán Olaya</strong> para la <strong>Universidad de Santander (UDES)</strong>. Se explica la evaluación de los recursos GeoGebra y PhET, los modelos LORI, COdA y HEODAR, y la propuesta de adaptación formativa.
+      </p>
+    </div>
+
+    <!-- Cinematic Player Card -->
+    <div class="cinema-player-card">
+      <!-- Selector de Fuente (Reproductor Directo sin restricciones vs YouTube) -->
+      <div class="cinema-source-tabs">
+        <button class="source-tab active" onclick="switchVideoSource('native')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Reproductor Directo (Full HD 1080p)
+        </button>
+        <button class="source-tab" onclick="switchVideoSource('youtube')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          Canal YouTube Oficial
+        </button>
+      </div>
+
+      <!-- 1. Reproductor Nativo HTML5 (Sin Error 153, funciona 100% online y offline) -->
+      <div id="video-native-box" class="cinema-video-wrapper">
+        <video 
+          class="cinema-html5-video" 
+          controls 
+          preload="metadata" 
+          poster="media/video-poster-1080p.jpg"
+          aria-label="Sustentación de Modelos de Evaluación de RED">
+          <source src="media/video-presentacion-modelos-red-estudio-fullhd.mp4" type="video/mp4">
+          Tu navegador no admite reproducción de video HTML5.
+        </video>
+      </div>
+
+      <!-- 2. Contenedor YouTube Embed -->
+      <div id="video-youtube-box" class="cinema-iframe-wrapper" style="display:none;">
+        <iframe 
+          id="yt-iframe"
+          src=""
+          data-src="https://www.youtube-nocookie.com/embed/Npxy5lsKq0U?rel=0&modestbranding=1" 
+          title="Sustentación Oficial: Modelos de Evaluación de RED - Universidad de Santander UDES"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Barra de Metadatos y Accesos Directos -->
+      <div class="cinema-controls-bar">
+        <div class="cinema-meta">
+          <span class="cinema-badge hd">▶ 1080p Full HD</span>
+          <span class="cinema-badge">CC Subtítulos Sincronizados</span>
+          <span class="cinema-badge">04:03 min</span>
+          <span class="cinema-badge udes">UDES · CVUDES 2026</span>
+        </div>
+        <div class="cinema-actions">
+          <a href="https://youtu.be/Npxy5lsKq0U" target="_blank" rel="noopener" class="cinema-btn red">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Ver en YouTube
+          </a>
+          <a href="media/subtitulos-video-modelos-red.srt" download class="cinema-btn outline">
+            Descargar Subtítulos (.srt)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section alt"><div class="shell"><p class="tag">Recorrido del sitio</p><div class="grid three"><article class="card"><h3>01 · Modelos y RED</h3><p>Justificación de LORI, COdA e ISO/IEC 25010 y ficha de los recursos elegidos.</p><a href="modelos.html">Explorar análisis →</a></article><article class="card"><h3>02 · Rediseño</h3><p>Propuesta didáctica que transforma dos simulaciones en una secuencia de aprendizaje.</p><a href="rediseno.html">Ver propuesta →</a></article><article class="card"><h3>03 · Aplicación</h3><p>Matriz de evaluación COdA, resultados y lectura crítica de los hallazgos.</p><a href="aplicacion.html">Ver resultados →</a></article></div></div></section></main><footer class="academic-footer">
+  <div class="shell">
+    <div>
+      <p style="margin:0 0 4px; font-weight:700; color:#E2E8F0;">Universidad de Santander – UDES · Centro de Educación Virtual CVUDES</p>
+      <p style="margin:0; font-size:0.82rem; color:#64748B;">Módulo: Evaluación de Recursos Educativos Digitales · Docente Tutor: Mg. Hugo Ferdinand Burgos Bareño</p>
+      <p style="margin:4px 0 0; font-size:0.82rem; color:#94A3B8;">Autores: Diana Fernanda Rivera Ardila & Jhonatan Stiven Guzmán Olaya · Imperial Eagles Bilingual School</p>
+    </div>
+    <div style="text-align:right;">
+      <a href="https://youtu.be/Npxy5lsKq0U" target="_blank" rel="noopener" style="font-weight:700; text-decoration:none;">Ver Sustentación en YouTube ↗</a>
+      <p style="margin:4px 0 0; font-size:0.78rem; color:#64748B;">Entregable 1 · Octubre 2026</p>
+    </div>
+  </div>
+</footer><script src="app.js"></script></body></html>

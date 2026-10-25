@@ -1,0 +1,13 @@
+Guion para video - Duración estimada: 2 minutos y 40 segundos
+
+Este portafolio evalúa dos recursos educativos digitales abiertos de PhET: Construye un átomo y Parejas de fracciones. El propósito no es decidir solo si funcionan, sino si son adecuados para aprender, fáciles de usar y accesibles en el contexto de aula.
+
+Se revisaron seis modelos: LORI, COdA, ECOBA, HEODAR, Reeves y la norma UNE 71362. Para la aplicación se seleccionaron tres instrumentos: LORI, COdA y HEODAR.
+
+LORI permite valorar calidad de contenidos, objetivos, retroalimentación, motivación, diseño, usabilidad, accesibilidad, reusabilidad y estándares. Su principal ventaja es que presenta una rúbrica clara, útil para revisión docente. Su límite es que el resultado puede ser subjetivo y exige consenso entre evaluadores. Los dos recursos obtuvieron alta usabilidad, pues las acciones y la navegación se aprenden rápidamente; sin embargo, se debe validar la accesibilidad con los estudiantes reales.
+
+COdA integra criterios didácticos y tecnológicos: objetivos, contenidos, reflexión, interactividad, motivación, diseño, usabilidad, accesibilidad, reusabilidad e interoperabilidad. Su ventaja es que conecta cada puntaje con un plan de mejora. Su límite es que la escala debe adaptarse al contexto y no sustituye una prueba de usuarios. Construye un átomo obtuvo 4,4 sobre 5 y Parejas de fracciones 4,2 sobre 5. La principal mejora es añadir preguntas de argumentación y apoyos de accesibilidad.
+
+HEODAR profundiza en las categorías didáctico-curricular, psicopedagógica, diseño de interfaz y reutilización. Su ventaja es el detalle con que observa la interfaz y la motivación. Su límite es la extensión del instrumento y la necesidad de un evaluador familiarizado. Ambos RED mostraron una interfaz sólida y fácil de manejar.
+
+El modelo más pertinente para adaptar en mi práctica pedagógica es COdA. Sus diez criterios son comprensibles y permiten revisar, antes de clase, si el recurso tiene una actividad coherente, es usable, accesible y técnicamente viable. Lo complementaré con una breve prueba de estudiantes para decidir si el RED se usa, se rediseña o se descarta.
