@@ -1,0 +1,309 @@
+/* ===================================================================
+   LIGHTBOX & FULLSCREEN MODAL PREMIUM · PORTAFOLIO RED UDES
+   Visualizador de alta definición con zoom 1:1 y pantalla completa nativa
+   =================================================================== */
+
+/* Contenedor relativo de figuras para posicionar el badge de zoom */
+.deck-side-figure,
+.deck-figure,
+.slide-split figure {
+  position: relative !important;
+  cursor: pointer;
+  display: block;
+}
+
+/* Badge flotante "Pantalla completa" en hover */
+.zoom-trigger-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.9;
+  transform: translateY(0);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  pointer-events: auto;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.deck-side-figure:hover .zoom-trigger-btn,
+.deck-figure:hover .zoom-trigger-btn,
+.slide-split figure:hover .zoom-trigger-btn {
+  opacity: 1;
+  background: #0d9488;
+  border-color: #2dd4bf;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 148, 136, 0.4);
+}
+
+.zoom-trigger-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+/* Hover suave sobre la imagen del slide */
+.deck-side-figure img,
+.deck-figure img,
+.slide-split figure img {
+  cursor: zoom-in;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.deck-side-figure:hover img,
+.deck-figure:hover img,
+.slide-split figure:hover img {
+  filter: brightness(1.02);
+}
+
+/* -------------------------------------------------------------------
+   OVERLAY MODAL DE PANTALLA COMPLETA
+   ------------------------------------------------------------------- */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(8, 15, 30, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lightbox-modal.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Barra superior del visor */
+.lightbox-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background: rgba(15, 23, 42, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  z-index: 10;
+}
+
+.lightbox-title-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.lightbox-badge {
+  background: #0d9488;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.lightbox-counter {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.lightbox-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lightbox-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.lightbox-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.lightbox-btn:active {
+  transform: translateY(0);
+}
+
+.lightbox-btn-close {
+  background: #e11d48;
+  border-color: #f43f5e;
+}
+
+.lightbox-btn-close:hover {
+  background: #be123c;
+}
+
+/* Área central de imagen y navegación */
+.lightbox-body {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 70px;
+  overflow: auto;
+  user-select: none;
+}
+
+.lightbox-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lightbox-img {
+  display: block;
+  max-width: 95vw;
+  max-height: calc(88vh - 120px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  transition: max-width 0.2s ease, max-height 0.2s ease, transform 0.2s ease;
+}
+
+/* Modo Zoom 100% / Escala Real */
+.lightbox-modal.is-zoomed .lightbox-body {
+  display: block;
+  overflow: auto;
+  cursor: grab;
+}
+
+.lightbox-modal.is-zoomed .lightbox-img-wrapper {
+  min-width: 1400px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.lightbox-modal.is-zoomed .lightbox-img {
+  max-width: 1400px;
+  max-height: none;
+  width: 1400px;
+}
+
+/* Botones de navegación Anterior / Siguiente */
+.lightbox-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 20;
+}
+
+.lightbox-nav-btn:hover {
+  background: #0d9488;
+  border-color: #2dd4bf;
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 6px 20px rgba(13, 148, 136, 0.4);
+}
+
+.lightbox-nav-prev {
+  left: 18px;
+}
+
+.lightbox-nav-next {
+  right: 18px;
+}
+
+/* Barra inferior con pie de foto y atajos */
+.lightbox-bottombar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: rgba(15, 23, 42, 0.85);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  font-size: 0.84rem;
+  z-index: 10;
+}
+
+.lightbox-caption {
+  font-weight: 600;
+  color: #f1f5f9;
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lightbox-shortcuts {
+  color: #94a3b8;
+  font-size: 0.76rem;
+  display: flex;
+  gap: 14px;
+}
+
+.lightbox-shortcuts kbd {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #e2e8f0;
+  font-family: inherit;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .lightbox-topbar { padding: 10px 14px; }
+  .lightbox-body { padding: 14px 10px; }
+  .lightbox-nav-btn { width: 38px; height: 38px; font-size: 1.1rem; }
+  .lightbox-nav-prev { left: 8px; }
+  .lightbox-nav-next { right: 8px; }
+  .lightbox-bottombar { flex-direction: column; gap: 6px; align-items: flex-start; padding: 10px 14px; }
+  .lightbox-caption { max-width: 100%; font-size: 0.78rem; }
+  .lightbox-shortcuts { display: none; }
+  .lightbox-btn span { display: none; }
+  .lightbox-btn { padding: 7px 10px; }
+}
