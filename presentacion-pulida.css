@@ -113,7 +113,18 @@
 }
 
 /* Visual slide layouts (2-column executive grid) */
-.deck-visual {
+/* Regla primordial para ocultar diapositivas inactivas */
+.deck.js-ready .deck-slide[hidden],
+.deck.js-ready .deck-slide.is-hidden,
+.deck-slide[hidden],
+.deck-slide.is-hidden {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Solo las diapositivas visuales activas despliegan la grilla ejecutiva */
+.deck-slide.deck-visual:not([hidden]):not(.is-hidden) {
   display: grid !important;
   grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.98fr);
   gap: clamp(20px, 3.5vw, 44px);
